@@ -17,7 +17,8 @@ public class FuelCosts
             {
                 mpg = in.nextDouble();
                 in.nextLine();
-                done = true;
+                if(mpg > 0) done = true;
+                else System.out.println("Invalid input: MPG must be greater than zero.");
             }
             else
             {
@@ -34,7 +35,8 @@ public class FuelCosts
             {
                 costPerGallon = in.nextDouble();
                 in.nextLine();
-                done = true;
+                if(costPerGallon > 0) done = true;
+                else System.out.println("Invalid input: Cost per gallon must be greater than zero.");
             }
             else
             {
@@ -46,11 +48,15 @@ public class FuelCosts
         done = false;
         do {
             System.out.println("Enter the tank size in gallons: ");
-            if(in.hasNextDouble()) {
+            if(in.hasNextDouble())
+            {
                 tankSize = in.nextDouble();
                 in.nextLine();
-                done = true;
-            } else {
+                if(tankSize > 0) done = true;
+                else System.out.println("Invalid input: Tank size must be greater than zero.");
+            }
+            else
+            {
                 trash = in.nextLine();
                 System.out.println("Invalid input: " + trash + " Please enter a number.");
             }
