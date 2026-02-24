@@ -9,7 +9,7 @@ public class FuelCosts
         double costPerGallon = 0.0;
         double tankSize = 0.0;
         boolean done = false;
-        String trash = "";
+        String trash;
         do
         {
             System.out.println("Enter the miles per gallon: ");

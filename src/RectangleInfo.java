@@ -7,7 +7,7 @@ public class RectangleInfo
         double height = 0.0;
         double width = 0.0;
         boolean done = false;
-        String trash = "";
+        String trash;
         Scanner in = new Scanner(System.in);
         do
         {

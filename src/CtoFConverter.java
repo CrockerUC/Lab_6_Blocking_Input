@@ -7,15 +7,18 @@ public class CtoFConverter
         double celsius = 0.0;
         double fahrenheit;
         boolean done = false;
-        String trash = "";
+        String trash;
         Scanner in = new Scanner(System.in);
         do {
             System.out.println("Enter the temperature in Celsius: ");
-            if (in.hasNextDouble()) {
+            if (in.hasNextDouble())
+            {
                 celsius = in.nextDouble();
                 in.nextLine();
                 done = true;
-            } else {
+            }
+            else
+            {
                 trash = in.nextLine();
                 System.out.println("Invalid input: " + trash + " Please enter a number.");
             }
